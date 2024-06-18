@@ -1,0 +1,24 @@
+Individual Contributions 
+
+
+Name:		Gunawardena T S
+
+Id:		IT22350114
+
+Group:		SE/OOP/2023/S2/MLB/WD/G242 
+
+Function: Review
+
+Package:
+	Review
+	
+Jsp:
+	admindisplayReviews.jsp
+	deleteReview.jsp
+	displayReviews.jsp
+	InsertReviews.jsp
+	updateReview.jsp
+
+
+Create and view reviews can be done without login
+To update and delete, admin should login to the system.
