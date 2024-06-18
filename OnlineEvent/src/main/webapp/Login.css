@@ -1,0 +1,733 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #1a1f36;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    padding: 36px 36px 20px;
+    z-index: 20;
+}
+header nav .toggle {
+    display: none;
+    top: 26px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    z-index: 21;
+}
+header nav .toggle:focus {
+    outline: none;
+}
+header nav.active .toggle span {
+    background-color: #000;
+}
+header nav .toggle.active {
+    left: 32%;
+}
+header nav .toggle.active .first {
+    top: 16px;
+    transform: rotate(-45deg);
+}
+header nav .toggle.active .last {
+    top: 0;
+    transform: rotate(45deg);
+}
+header nav .toggle .hide {
+    transition: 0s;
+    visibility: hidden;
+}
+header nav .toggle span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    border-radius: 40px;
+}
+header nav .toggle span:not(:last-of-type) {
+    margin-bottom: 6px;
+}
+header nav .logo {
+    flex-basis: 56%;
+    padding-left: 50px;
+}
+header .navigation-bar.show {
+    width: 500%;
+}
+header .navigation-bar.show a {
+    color: #ccc !important;
+}
+header .navigation-bar.show a:hover {
+    color: #fff !important;
+}
+header .navigation-bar ul li {
+    flex: 1;
+    padding: 0 10px;
+}
+header .navigation-bar a {
+    text-decoration: none;
+    transition: all .5s;
+    font-size: 16px;
+}
+header nav.active .navigation-bar a {
+    color: #000;
+}
+header .navigation-bar .underline {
+    height: 2px;
+    width: 0;
+    left: 50%;
+    bottom: -4px;
+    transition: all .3s;
+    display: block;
+}
+header .text {
+    top: 24%;
+}
+header .text h1 {
+    margin-bottom: 0;
+}
+header .text .arrow .left, header .text .arrow .right {
+    height: 3px;
+    width: 100px;
+}
+header .text .arrow .left {
+    left: -4%;
+}
+header .text .arrow .right {
+    right: -4%;
+}
+header .text .arrow .left:after, header .text .arrow .right:after {
+    content: '';
+    border: 10px solid transparent;
+    border-left-color: #fff;
+    top: -8px;
+}
+header .text .arrow .right:after {
+    right: 0;
+    border-color: transparent #fff transparent transparent;
+}
+header .text .arrow .fa-asterisk {
+    vertical-align: super;
+}
+header .text span {
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+header .text .button button, .contact form button {
+    border: none;
+    padding: 9px 18px;
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-family: source_sans_problack, sans-serif;
+    border-radius: 3px;
+}
+header .text .button button, .contact form button:focus {
+    outline: none;
+}
+header .svg-down {
+    bottom: 0;
+    left: 50%;
+    z-index: 5;
+    margin-left: -96px;
+    margin-bottom: -12px;
+    color: #fff;
+}
+header .arrow-down {
+    width: 70px;
+    height: 50px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+    background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/arrow-down.png") no-repeat center;
+}
+
+
+
+/*Start Mutual*/
+p, .a-CTA, input, header .navigation-bar a, .copyright li, .contact .form form label, .contact .form form button {
+    font-family: Cabin, sans-serif;
+}
+.fa-asterisk, .a-CTA, h2, header .navigation-bar a:hover, header nav.active .navigation-bar a:hover, footer .social-media .links a:hover, .copyright .info li a, .copyright .CTA li a:hover {
+    color: #a96700;
+}
+header nav .navigation-bar .underline, header .text .button button:hover, .contact .form form button:hover, .contact .text i:hover {
+    background-color: #a96700;
+}
+header .navigation-bar ul li, header .text, .about-us .text, .reservation .text, .menu .box-model, .menu .text, .fixed-image .text, footer, .copyright, .contact .text i {
+    text-align: center;
+}
+header nav, header .navigation-bar ul, .about-us, .reservation, .about-us .image-container, .reservation .image-container, .menu, .menu .menu-image-container, footer .contact-container, .copyright ul, .contact {
+    display: flex;
+}
+header nav .toggle, header nav .toggle span, header .navigation-bar, header .navigation-bar ul, .menu .box-model .close, footer .social-media .links a, .copyright .CTA li a {
+    transition: .3s;
+}
+header, header nav .toggle span, header .navigation-bar a, header .text, header .text .arrow .left, header .text .arrow .right, .recipes, .menu .box-image-container, .fixed-image .text, .copyright, .copyright .arrow-up {
+    position: relative;
+}
+header nav .toggle, header .navigation-bar .underline, header .text .arrow .left:after, header .text .arrow .right:after, header .svg-down, header .arrow-down, .recipes .text, .menu .box-model .close, .menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left, .menu .box-image-container .box-image, .copyright .svg-up {
+    position: absolute;
+}
+.recipes .text, .fixed-image .text, .menu .box-image-container, .menu .box-image-container .box-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+header nav, header .navigation-bar a:hover .underline, header .navigation-bar li.active .underline, .menu .box-model, .menu .box-image-container, .menu .box-image-container .box-image {
+    width: 100%;
+}
+button, .dots > div, header nav .toggle, header .arrow-down, .menu .box-model .close, .menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left, .menu .menu-image-container .image img, footer .newsletter i, .copyright .arrow-up {
+    cursor: pointer;
+}
+.dots .active, header nav.active, header nav.active .toggle.active span, header nav .toggle span, header .navigation-bar .underline, header .text .arrow .left, header .text .arrow .right, header .text .button button, .contact form button {
+    background-color: #fff;
+}
+h1, h3, header .navigation-bar a, header .text span, .menu .box-model .close:hover, footer .text h2, footer .text p, footer .social-media .links a, .contact .text i, .contact .form form button {
+    color: #fff;
+}
+header nav, header .navigation-bar.show, header .navigation-bar a:hover .underline, header .navigation-bar li.active .underline, header .text .arrow .left:after, .menu .box-model, .copyright .arrow-up {
+    left: 0;
+}
+header .text .arrow .left:after, header .text .arrow .right:after, header .text span, footer .social-media .links a, footer .newsletter i, .copyright .arrow-up, .contact .text i, .contact .form form label {
+    display: inline-block;
+}
+/*End Mutual*/	
+
+
+/*Start Footer*/
+footer {
+    background-color: #121212;
+    padding: 60px 20px;
+}
+footer .text {
+    max-width: 500px;
+    margin: auto;
+}
+footer .text h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    letter-spacing: 1.9px;
+    margin-bottom: 25px;
+}
+footer .text .fa-asterisk {
+    font-size: 12px;
+}
+footer .text p {
+    line-height: 27px;
+}
+footer .contact-container {
+    padding: 40px 0;
+    max-width: 1000px;
+    margin: auto;
+}
+footer .contact-container > div {
+    flex: 1;
+}
+footer .contact-container h3 {
+    font-size: 19px;
+    letter-spacing: 1.9px;
+}
+footer .social-media .links a {
+    margin: 0 10px;
+    font-size: 25px;
+}
+footer .newsletter input {
+    padding: 10px;
+    width: 270px;
+    background-color: #eee;
+    border: none;
+    margin-left: -15px;
+}
+footer .newsletter i {
+    margin-left: -40px;
+    vertical-align: middle;
+    font-size: 21px;
+}
+.copyright {
+    padding: 15px 40px 30px;
+    background-color: #262526;
+}
+.copyright .svg-up {
+    top: 0;
+    left: 50%;
+    margin-left: -96px;
+    margin-top: -50px;
+}
+.copyright .arrow-up {
+    width: 40px;
+    height: 30px;
+    top: -45px;
+    color: #fff;
+    line-height: 1.9
+}
+.copyright ul {
+    justify-content: center;
+}
+.copyright li {
+    color: #919191;
+    font-size: 14px;
+}
+.copyright li:not(:last-of-type):after {
+    content: '•';
+    margin: 10px;
+}
+.copyright .CTA {
+    margin-top: 25px;
+}
+.copyright .CTA li a {
+    color: #919191;
+}
+
+/*End Footer*/
+
+/*End Home Page*/
+
+/*Start Contact Page*/
+.contact-header {
+	 opacity: 0.5;
+    background-image: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988526/contact-food.jpg");
+    height: 40vh;
+}
+.contact {
+    padding: 78px 40px;
+}
+.contact > div {
+    flex: 50%;
+}
+.contact .text p {
+    margin-bottom: 30px;
+}
+.contact .text i {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    line-height: 48px;
+    font-size: 24px;
+}
+.contact .text h2 {
+    font-family: source_sans_problack, sans-serif;
+    font-size: 24px;
+    color: #262626;
+    letter-spacing: 2.4px;
+    margin-bottom: 20px;
+}
+.contact .form {
+    margin-left: 48px;
+}
+.contact .form form label {
+    margin-bottom: 5px;
+    color: #515151;
+}
+.contact .form form input, .contact .form form textarea {
+	 opacity: 0.5;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border: 2px solid #D8D8D8;
+    outline: none;
+}
+.contact .form form input:focus, .contact .form form textarea:focus {
+    border-color: #a96700;
+    box-shadow: 0 1px 1px #737373;
+}
+.contact .form form textarea {
+    height: 212px;
+    resize: none;
+}
+.contact .form form button {
+    background-color: #262526;
+    padding: 12px 30px;
+    font-size: 12px;
+}
+/*End Contact Page*/
+
+/*Start Home Page Responsive*/
+
+@media (max-width: 1200px) {
+    .menu, .about-us, .reservation {
+        padding: 60px 40px;
+    }
+    .about-us .text, .reservation .text {
+        padding: 0 32px 0 0;
+    }
+    .about-us .image-container, .reservation .image-container {
+        align-items: center;
+    }
+    .menu .text {
+        padding: 0 0 0 32px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        padding: 0;
+    }
+    .dots {
+        display: none;
+    }
+    header {
+        height: calc(100vh - 10px);
+    }
+    header nav .logo {
+        padding-left: 0;
+    }
+    .about-us {
+        display: block;
+        padding-top: 50px;
+    }
+    .about-us .text , .reservation .text {
+        padding: 0 0 40px;
+    }
+    .about-us .image-container .image1, .reservation .image-container .image1 {
+        margin-left: 0;
+    }
+    .menu {
+        display: block;
+        padding: 60px 20px 60px 40px;
+    }
+    .menu .text {
+        padding: 20px 20px 0 0;
+    }
+    .reservation {
+        display: block;
+        padding: 30px 20px 60px;
+    }
+    .contact {
+        display: block;
+        padding: 78px 20px;
+    }
+    .contact .form {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        display: block;
+        text-align: center;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding-top: 25px;
+    }
+    header nav .toggle {
+        display: block;
+    }
+    header .navigation-bar {
+        position: fixed;
+        top: 0;
+        left: -174px;
+        height: 100%;
+        background-color: #262526;
+        overflow: hidden;
+        z-index: 20;
+        padding: 40px;
+    }
+    header .navigation-bar ul {
+        display: block;
+        padding-top: 40px;
+    }
+    header .navigation-bar ul li {
+        text-align: left;
+        padding: 14px 0;
+    }
+    footer .contact-container {
+        display: block;
+    }
+    footer .social-media {
+        margin-bottom: 40px;
+    }
+    .copyright ul {
+        display: block;
+        margin-top: -20px;
+    }
+    .copyright li {
+        margin-bottom: 5px;
+    }
+    .copyright li:not(:last-of-type):after {
+        content: '';
+    }
+
+}
+
+@media (max-width: 576px) {
+    h3, h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size:90px
+    }
+    header {
+        padding: 0;
+    }
+    header nav .logo {
+        padding-left: 0;
+    }
+    header nav .toggle.active {
+        left: 36%;
+    }
+    header .navigation-bar.show {
+        padding: 20px;
+        width: 48%;
+    }
+    .about-us, .reservation {
+        padding: 60px 20px;
+    }
+    .menu {
+        padding: 60px 0 60px 20px;
+    }
+}
+
+
+
+
+body {
+	
+	
+    min-height: 100%;
+    background-color: #ffffff;
+}
+h1 {
+    letter-spacing: -1px;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: unset;
+}
+.login-root {
+	 
+    background: #fff;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.loginbackground {
+	
+	 background: url("http://www.3nevents.com/images/slides/srilanka-wedding.webp") fixed bottom;
+    min-height: 692px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+.flex-flex {
+	
+    display: flex;
+}
+.align-center {
+  align-items: center; 
+}
+.center-center {
+	
+  align-items: center;
+  justify-content: center;
+}
+.box-root {
+    box-sizing: border-box;
+}
+.flex-direction--column {
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.loginbackground-gridContainer {
+	
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: [start] 1fr [left-gutter] (86.6px)[16] [left-gutter] 1fr [end];
+    grid-template-columns: [start] 1fr [left-gutter] repeat(16,86.6px) [left-gutter] 1fr [end];
+    -ms-grid-rows: [top] 1fr [top-gutter] (64px)[8] [bottom-gutter] 1fr [bottom];
+    grid-template-rows: [top] 1fr [top-gutter] repeat(8,64px) [bottom-gutter] 1fr [bottom];
+    justify-content: center;
+    margin: 0 -2%;
+    transform: rotate(-12deg) skew(-12deg);
+}
+.box-divider--light-all-2 {
+	
+    box-shadow: inset 0 0 0 2px #e3e8ee;
+}
+.box-background--blue {
+    background-color: rgb(255, 255, 255);
+}
+.box-background--white {
+	
+  background-color: #ffffff; 
+}
+.box-background--blue800 {
+	
+    background-color: #212d63;
+}
+.box-background--gray100 {
+	
+    background-color: #e3e8ee;
+}
+.box-background--cyan200 {
+    background-color: #7fd3ed;
+}
+.padding-top--64 {
+  padding-top: 64px;
+}
+.padding-top--24 {
+  padding-top: 24px;
+}
+.padding-top--48 {
+  padding-top: 48px;
+}
+.padding-bottom--24 {
+  padding-bottom: 24px;
+}
+.padding-horizontal--48 {
+  padding: 48px;
+}
+.padding-bottom--15 {
+  padding-bottom: 15px;
+}
+
+
+.flex-justifyContent--center {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.formbg {
+	opacity: 0.8;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 448px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+span {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1a1f36;
+}
+label {
+    margin-bottom: 10px;
+}
+.reset-pass a,label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+.reset-pass > a {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.grid--50-50 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.field input {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+input[type="submit"] {
+    background-color: rgb(84, 105, 212);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+                rgb(84, 105, 212) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.field-checkbox input {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px; 
+    box-shadow: unset;
+    min-height: unset;
+}
+.field-checkbox label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+a.ssolink {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+.footer-link span {
+    font-size: 14px;
+    text-align: center;
+}
+.listing a {
+    color: #697386;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.animationRightLeft {
+  animation: animationRightLeft 2s ease-in-out infinite;
+}
+.animationLeftRight {
+  animation: animationLeftRight 2s ease-in-out infinite;
+}
+.tans3s {
+  animation: animationLeftRight 3s ease-in-out infinite;
+}
+.tans4s {
+  animation: animationLeftRight 4s ease-in-out infinite;
+}
+
+@keyframes animationLeftRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} 
+
+@keyframes animationRightLeft {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

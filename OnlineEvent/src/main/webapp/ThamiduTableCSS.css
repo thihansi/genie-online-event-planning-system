@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+.zui-table {
+    border: solid 1px #8d8f5b;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+   	margin: 0 auto;
+   	width: 90%;
+   	font-family: Arial, sans-serif;
+   	font-size: 16px;
+   	 background-color: rgba(255, 255, 255, 0.9);
+
+}
+.zui-table thead th {
+    background-color: rgb(0, 0, 128);
+    border: solid 1px #3d4a33;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+.zui-table tbody td {
+    border: solid 1px rgb(64, 0, 64);
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+html {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+
+/* Style the update and delete buttons */
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    width: 100px; /* Set a fixed width for both buttons */
+    padding: 10px; /* Adjust padding as needed */
+    background-color: transparent; /* Set a transparent background */
+    color: black; /* Set text color */
+    border: 2px solid #000; /* Add a black border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+    margin-right: 10px; /* Add spacing between buttons */
+}
+
+.button-container button:hover {
+    background-color: transparent; /* Maintain transparency on hover */
+    border: 2px solid whitesmoke; /* Change border color on hover */
+    color: red; /* Change text color on hover */
+}
+
+/* Style the "Reviews" heading */
+h1 {
+    text-align: center; /* Center align the text */
+    font-family: Apple Chancery; /* Use a generic sans-serif font */
+    font-size: 36px; /* Adjust the font size as needed */
+    color: rgb(255, 255, 255); /* Set the desired text color */
+    font-weight: bold;
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 3px; /* Adjust letter spacing as needed */
+    text-shadow: 0 0 10px rgb(0, 0, 128), 0 0 20px rgb(0, 0, 160), 0 0 30px rgb(0, 0, 255);
+}
+
+
+
+.zui-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly darker background color on hover */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+}

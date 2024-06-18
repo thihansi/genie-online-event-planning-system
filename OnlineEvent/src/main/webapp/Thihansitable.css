@@ -1,0 +1,109 @@
+@charset "ISO-8859-1";
+.zui-table {
+    border: solid 1px #8d8f5b;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+   	margin: 0 auto;
+   	width: 80%;
+   	font-family: Arial, sans-serif;
+   	font-size: 16px;
+   	background-color: rgba(255, 255, 255, 0.7);
+   	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+
+
+}
+.zui-table thead th {
+	background-color: rgba(61, 74, 51, 0.7);
+    border: solid 1px #3d4a33;
+    color: #d3d3d3;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+.zui-table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.zui-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly darker background color on hover */
+}
+html {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+
+/* Style the update and delete buttons */
+.button-container {
+    text-align: center;
+}
+
+.button-container button {
+    width: 100px; /* Set a fixed width for both buttons */
+    padding: 10px; /* Adjust padding as needed */
+    background-color: transparent; /* Set a transparent background */
+    color: black; /* Set text color */
+    border: 2px solid #000; /* Add a black border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+    margin-right: 10px; /* Add spacing between buttons */
+}
+
+
+.button-container button:hover {
+    background-color: transparent; /* Maintain transparency on hover */
+    border: 2px solid whitesmoke; /* Change border color on hover */
+    color: red; /* Change text color on hover */
+}
+
+
+.button-container1 {
+    text-align: center;
+}
+
+.button-container1 button {
+    width: 100px; /* Set a fixed width for both buttons */
+    padding: 10px; /* Adjust padding as needed */
+    background-color: rgba(61, 74, 51, 0.7) ; /* Set a transparent background */
+    color: black; /* Set text color */
+    border: 2px solid #000; /* Add a black border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+    margin-right: 10px; /* Add spacing between buttons */
+}
+
+
+.button-container1 button:hover {
+    background-color: transparent; /* Maintain transparency on hover */
+    border: 2px solid rgb(0, 0, 0); /* Change border color on hover */
+    color: rgb(0, 0, 0); /* Change text color on hover */
+}
+
+
+/* Style the "Reviews" heading */
+h1 {
+    text-align: center; 
+    font-family: Sans-Serif Fonts, cursive; 
+    font-size: 36px; 
+    color: #d3d3d3; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
